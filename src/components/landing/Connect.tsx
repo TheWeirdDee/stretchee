@@ -53,7 +53,7 @@ export default function Connect() {
             </div>
 
             <div ref={contentRef} className="relative z-10 w-full max-w-3xl mx-auto flex flex-col items-center text-center opacity-0">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-8 leading-[1.15]">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-8 mt-4 leading-[1.15]">
                     Connect, Grow, and<br className="hidden md:block" /> Thrive Together
                 </h2>
 

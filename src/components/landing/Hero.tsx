@@ -72,7 +72,7 @@ export default function Hero() {
 
     return (
         <div ref={container} className="relative min-h-screen w-full flex flex-col font-sans text-white overflow-hidden bg-black">
-            {/* Background Image Setup */}
+        
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/images/LandingPageImages/HeroBg.jpg"

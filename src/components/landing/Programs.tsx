@@ -35,7 +35,7 @@ export default function Programs() {
     const [activeFilter, setActiveFilter] = useState("Yoga");
 
     useGSAP(() => {
-        // Animate Header Content
+
         gsap.fromTo(headerRef.current,
             { y: 50, opacity: 0 },
             {
@@ -47,7 +47,6 @@ export default function Programs() {
             }
         );
 
-        // Animate Cards Staggered
         if (cardsRef.current) {
             const cards = cardsRef.current.children;
             gsap.fromTo(cards,
@@ -64,20 +63,22 @@ export default function Programs() {
     }, { scope: sectionRef });
 
     return (
-        <section ref={sectionRef} className="w-full bg-gradient-to-b from-[#FAFAFA] to-white text-black py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
-            <div className="max-w-7xl mx-auto flex flex-col items-center w-full">
+        <section ref={sectionRef} className="relative w-full text-black py-20 px-6 md:px-12 lg:px-16 overflow-hidden bg-[#FAFAFA]">
 
-                {/* Top Row: Subtitle & Filters */}
+            <div className="absolute top-[-10%] left-[-20%] w-[60%] h-[120%] bg-[#FFEADD] opacity-80 blur-[150px] rounded-full pointer-events-none z-0"></div>
+            <div className="absolute top-[-10%] right-[-20%] w-[60%] h-[120%] bg-[#DFF0E6] opacity-80 blur-[150px] rounded-full pointer-events-none z-0"></div>
+
+            <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center w-full">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mb-16 gap-6">
-                    <span className="text-sm font-medium tracking-wide opacity-60">/Programs</span>
+                    <span className="text-sm font-medium tracking-wide opacity-60">Programs</span>
                     <div className="flex items-center gap-3">
                         {filters.map((filter) => (
                             <button
                                 key={filter}
                                 onClick={() => setActiveFilter(filter)}
                                 className={`px-6 py-2 rounded-full text-sm font-medium transition-colors border ${activeFilter === filter
-                                        ? "bg-black text-white border-black"
-                                        : "bg-transparent text-black border-black/20 hover:border-black/50"
+                                    ? "bg-black text-white border-black"
+                                    : "bg-transparent text-black border-black/20 hover:border-black/50"
                                     }`}
                             >
                                 {filter}
@@ -86,7 +87,6 @@ export default function Programs() {
                     </div>
                 </div>
 
-                {/* Section Header */}
                 <div ref={headerRef} className="flex flex-col items-center text-center max-w-3xl mb-20 opacity-0">
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-6 leading-[1.1]">
                         Join Guided Programs<br />and Challenges
@@ -99,11 +99,10 @@ export default function Programs() {
                     </button>
                 </div>
 
-                {/* Cards Grid */}
                 <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
                     {programCards.map((item, index) => (
                         <div key={index} className="relative flex flex-col rounded-3xl overflow-hidden aspect-[4/5] shadow-sm group opacity-0">
-                            {/* Background Image */}
+
                             <Image
                                 src={item.image}
                                 alt={item.title}
@@ -112,10 +111,9 @@ export default function Programs() {
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 sizes="(max-width: 768px) 100vw, 33vw"
                             />
-                            {/* Gradient Overlay for Text */}
+
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-                            {/* Card Content (Bottom) */}
                             <div className="relative z-10 p-8 flex flex-col justify-end h-full text-white">
                                 <h3 className="text-2xl font-medium mb-3 tracking-tight">{item.title}</h3>
                                 <p className="text-sm opacity-80 leading-relaxed font-light line-clamp-2 md:line-clamp-3">
