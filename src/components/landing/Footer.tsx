@@ -14,9 +14,9 @@ export default function Footer() {
                             <span className="relative flex items-center justify-center w-8 h-8 rounded-full border border-black/10 bg-[#1A3626] text-white">
                                 <span className="font-serif italic font-bold text-[1.4rem] leading-none tracking-tighter" style={{ fontFamily: 'Georgia, serif' }}>S</span>
                             </span>
-                            <span className="text-xl md:text-2xl font-medium tracking-tight">
-                                Stretchee
-                            </span>
+                             <em><span className="relative right-2 text-xl md:text-2xl font-medium tracking-tight">
+                                tretchee
+                            </span></em>
                         </div>
                         <div className="flex gap-3">
                             <a href="#" className="w-10 h-10 rounded-full border-2 border-[#1A3626] flex items-center justify-center hover:bg-black/5 transition-colors">

@@ -65,8 +65,8 @@ export default function Programs() {
     return (
         <section ref={sectionRef} className="relative w-full text-black py-14 md:py-20 px-6 md:px-12 lg:px-16 overflow-hidden bg-[#FAFAFA]">
 
-            <div className="absolute top-[-10%] left-[-20%] w-[60%] h-[120%] bg-[#FFEADD] opacity-80 blur-[150px] rounded-full pointer-events-none z-0"></div>
-            <div className="absolute top-[-10%] right-[-20%] w-[60%] h-[120%] bg-[#DFF0E6] opacity-80 blur-[150px] rounded-full pointer-events-none z-0"></div>
+            <div className="absolute top-0 left-[-40%] w-[100%] md:top-[-10%] md:left-[-20%] md:w-[60%] h-[100%] md:h-[120%] bg-[#FFEADD] opacity-80 blur-[90px] md:blur-[150px] rounded-full pointer-events-none z-0"></div>
+            <div className="absolute top-0 right-[-40%] w-[100%] md:top-[-10%] md:right-[-20%] md:w-[60%] h-[100%] md:h-[120%] bg-[#DFF0E6] opacity-80 blur-[90px] md:blur-[150px] rounded-full pointer-events-none z-0"></div>
 
             <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center w-full">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mb-16 gap-6">

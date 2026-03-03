@@ -45,7 +45,7 @@ export default function Navbar() {
                 >
                     <Waves size={24} strokeWidth={1.5} className="rotate-90" />
                 </button>
-                {/* Desktop Nav Links */}
+               
                 <div className="hidden md:flex gap-6 text-sm font-medium tracking-wide items-center">
                     <Link href="#" className="hover:opacity-70 transition-opacity">Classes</Link>
                     <Link href="#" className="hover:opacity-70 transition-opacity">Programs</Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
                     <span className="relative flex items-center justify-center w-8 h-8 mr-1 -ml-2 rounded-full border border-white/50 bg-white/10 backdrop-blur-sm">
                         <span className="font-serif italic font-bold text-[1.4rem] leading-none text-[#1A3626] tracking-tighter" style={{ fontFamily: 'Georgia, serif' }}>S</span>
                     </span>
-                    tretchee
+                    <em>tretchee</em>
                 </span>
             </div>
 
