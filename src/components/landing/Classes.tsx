@@ -92,7 +92,7 @@ export default function Classes() {
                             Whether you're here to find a moment of calm or to deepen your practice with advanced poses, we have options that fit seamlessly into your schedule and support your journey to wellness.
                         </p>
                     </div>
-                    <button className="bg-white text-black px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors whitespace-nowrap">
+                    <button className="bg-[#1A3626] text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors whitespace-nowrap">
                         Browse Classes
                     </button>
                 </div>
@@ -101,7 +101,7 @@ export default function Classes() {
                     {classesFeatures.map((item, index) => (
                         <div key={index} className="flex flex-col bg-[#F8F9FA] text-black rounded-[1.5rem] p-6 pt-8 shadow-md opacity-0">
 
-                            <div className="bg-[#EFEFEF] w-12 h-12 rounded-xl flex items-center justify-center mb-10 text-[#4A5568]">
+                            <div className="bg-[#1A3626] w-12 h-12 rounded-xl flex items-center justify-center mb-10 text-white">
                                 {item.icon}
                             </div>
                             <h3 className="text-lg font-medium mb-2 tracking-snug">{item.title}</h3>

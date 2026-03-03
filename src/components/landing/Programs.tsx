@@ -63,7 +63,7 @@ export default function Programs() {
     }, { scope: sectionRef });
 
     return (
-        <section ref={sectionRef} className="relative w-full text-black py-20 px-6 md:px-12 lg:px-16 overflow-hidden bg-[#FAFAFA]">
+        <section ref={sectionRef} className="relative w-full text-black py-14 md:py-20 px-6 md:px-12 lg:px-16 overflow-hidden bg-[#FAFAFA]">
 
             <div className="absolute top-[-10%] left-[-20%] w-[60%] h-[120%] bg-[#FFEADD] opacity-80 blur-[150px] rounded-full pointer-events-none z-0"></div>
             <div className="absolute top-[-10%] right-[-20%] w-[60%] h-[120%] bg-[#DFF0E6] opacity-80 blur-[150px] rounded-full pointer-events-none z-0"></div>
@@ -77,7 +77,7 @@ export default function Programs() {
                                 key={filter}
                                 onClick={() => setActiveFilter(filter)}
                                 className={`px-6 py-2 rounded-full text-sm font-medium transition-colors border ${activeFilter === filter
-                                    ? "bg-black text-white border-black"
+                                    ? "bg-[#1A3626] text-white border-black"
                                     : "bg-transparent text-black border-black/20 hover:border-black/50"
                                     }`}
                             >

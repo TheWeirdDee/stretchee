@@ -39,7 +39,7 @@ export default function Testimonials() {
     }, { scope: sectionRef });
 
     return (
-        <section ref={sectionRef} className="w-full bg-white text-black py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
+        <section ref={sectionRef} className="w-full bg-white text-black py-10 md:py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 lg:gap-12 relative">
 
                 <div className="md:w-1/3 lg:w-[32%] flex flex-col justify-between max-md:contents">

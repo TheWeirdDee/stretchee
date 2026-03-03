@@ -40,6 +40,7 @@ export default function WhatWeDo() {
     const headerRef = useRef<HTMLDivElement>(null);
     const cardsRef = useRef<HTMLDivElement>(null);
 
+
     useGSAP(() => {
 
         gsap.fromTo(headerRef.current,
@@ -69,7 +70,7 @@ export default function WhatWeDo() {
     }, { scope: sectionRef });
 
     return (
-        <section ref={sectionRef} className="w-full bg-[#FAFAFA] text-black py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
+        <section ref={sectionRef} className="w-full bg-[#FAFAFA] text-black py-14 md:py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
 
                 <div ref={headerRef} className="flex flex-col items-center text-center max-w-2xl mb-20 opacity-0">
@@ -87,7 +88,7 @@ export default function WhatWeDo() {
 
                 <div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
                     {classesData.map((item, index) => (
-                        <div key={index} className={`flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 ${item.offsetClass}`}>
+                        <div key={index} className={`flex flex-col bg-white rounded-4xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 opacity-0 ${item.offsetClass}`}>
                             <div className="relative w-full aspect-[4/5]">
                                 <Image
                                     src={item.image}

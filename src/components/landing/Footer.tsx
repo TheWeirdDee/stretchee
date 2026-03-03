@@ -11,7 +11,7 @@ export default function Footer() {
  
                     <div className="flex flex-col gap-8 lg:w-1/4">
                         <div className="flex items-center gap-2">
-                            <span className="relative flex items-center justify-center w-8 h-8 rounded-full border border-black/10 bg-emerald-500 text-white">
+                            <span className="relative flex items-center justify-center w-8 h-8 rounded-full border border-black/10 bg-[#1A3626] text-white">
                                 <span className="font-serif italic font-bold text-[1.4rem] leading-none tracking-tighter" style={{ fontFamily: 'Georgia, serif' }}>S</span>
                             </span>
                             <span className="text-xl md:text-2xl font-medium tracking-tight">
@@ -19,22 +19,21 @@ export default function Footer() {
                             </span>
                         </div>
                         <div className="flex gap-3">
-                            <a href="#" className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center hover:bg-black/5 transition-colors">
+                            <a href="#" className="w-10 h-10 rounded-full border-2 border-[#1A3626] flex items-center justify-center hover:bg-black/5 transition-colors">
                                 <Twitter size={18} strokeWidth={1.5} />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center hover:bg-black/5 transition-colors">
+                            <a href="#" className="w-10 h-10 rounded-full border-2 border-[#1A3626] flex items-center justify-center hover:bg-black/5 transition-colors">
                                 <Send size={18} strokeWidth={1.5} className="-ml-0.5 mt-0.5" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center hover:bg-black/5 transition-colors">
+                            <a href="#" className="w-10 h-10 rounded-full border-2 border-[#1A3626] flex items-center justify-center hover:bg-black/5 transition-colors">
                                 <Facebook size={18} strokeWidth={1.5} />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center hover:bg-black/5 transition-colors">
+                            <a href="#" className="w-10 h-10 rounded-full border-2 border-[#1A3626] flex items-center justify-center hover:bg-black/5 transition-colors font-[#1A3626]">
                                 <Instagram size={18} strokeWidth={1.5} />
                             </a>
                         </div>
                     </div>
-
-                    {/* Middle: Contact Info */}
+ 
                     <div className="flex flex-col gap-8 lg:w-[35%]">
                         <div className="flex flex-col gap-2">
                             <span className="text-sm opacity-60 font-light">Have a question or feedback? Reach out below</span>
