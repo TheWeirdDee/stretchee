@@ -139,7 +139,7 @@ export default function Hero() {
 
             <Link
               ref={btnRef}
-              href="#"
+              href="/auth/signup"
               className="inline-flex items-center justify-center gap-4 bg-white text-black pl-6 pr-2 py-2 rounded-full text-base font-medium hover:bg-gray-200 transition-colors w-max opacity-0"
             >
               Try 14 Days Free

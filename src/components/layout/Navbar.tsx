@@ -66,7 +66,7 @@ export default function Navbar() {
             {/* Right: Sign in */}
             <div className="flex items-center">
                 <Link
-                    href="#"
+                    href="/auth/signin"
                     className="flex items-center justify-center gap-3 bg-white text-black pl-5 pr-2 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
                 >
                     Sign in
@@ -92,7 +92,7 @@ export default function Navbar() {
                     <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="mobile-link hover:opacity-70 transition-opacity">Classes</Link>
                     <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="mobile-link hover:opacity-70 transition-opacity">Programs</Link>
                     <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="mobile-link hover:opacity-70 transition-opacity">Academy</Link>
-                    <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="mobile-link hover:opacity-70 transition-opacity mt-8 border-t border-white/20 pt-8">Sign in</Link>
+                    <Link href="/auth/signin" onClick={() => setIsMobileMenuOpen(false)} className="mobile-link hover:opacity-70 transition-opacity mt-8 border-t border-white/20 pt-8">Sign in</Link>
                 </div>
             </div>
         </nav>
