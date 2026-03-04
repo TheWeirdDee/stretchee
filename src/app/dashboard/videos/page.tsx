@@ -35,21 +35,33 @@ export default function VideoLibrary() {
                 </button>
             </div>
 
-            <div className="flex gap-2 overflow-x-auto pb-4 mb-4 hide-scrollbar">
-                {["All", "Strength", "Yoga", "Cardio", "Abs", "Recovery", "Upper Body", "Lower Body", "No Equipment"].map(filter => (
-                    <button 
-                        key={filter}
-                        onClick={() => setActiveFilter(filter)}
-                        className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors border ${
-                            activeFilter === filter 
-                                ? "bg-[#1A3626] text-white border-[#1A3626]" 
-                                : "bg-white text-black/70 border-black/10 hover:border-black/30"
-                        }`}
-                    >
-                        {filter}
-                    </button>
-                ))}
-            </div>
+            <div className="relative -mx-4 px-4">
+  <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-4 hide-scrollbar scroll-smooth">
+    {[
+      "All",
+      "Strength",
+      "Yoga",
+      "Cardio",
+      "Abs",
+      "Recovery",
+      "Upper Body",
+      "Lower Body",
+      "No Equipment",
+    ].map((filter) => (
+      <button
+        key={filter}
+        onClick={() => setActiveFilter(filter)}
+        className={`flex items-center justify-center px-5 rounded-full text-sm font-medium whitespace-nowrap transition-colors border flex-shrink-0 h-10 ${
+          activeFilter === filter
+            ? "bg-[#1A3626] text-white border-[#1A3626]"
+            : "bg-white text-black/70 border-black/10 hover:border-black/30"
+        }`}
+      >
+        {filter}
+      </button>
+    ))}
+  </div>
+</div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {videos.map(video => (

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useAppStore } from "@/store/useAppStore";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "../../lib/supabase";
 import { 
     Home, 
     Calendar, 
