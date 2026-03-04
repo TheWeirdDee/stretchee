@@ -116,7 +116,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
 
-        <main className="flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-16 mt-10 md:mt-20">
+        <main className="flex-1 flex flex-col justify-center px-6 md:px-12 lg:px-16 mt-5 md:mt-10">
           <div className="max-w-2xl">
             <h1
               ref={textRef1}

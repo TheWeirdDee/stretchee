@@ -103,6 +103,7 @@ export default function SignUp() {
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 required
+                                autoComplete="name"
                                 className="w-full px-5 py-3.5 rounded-2xl border border-black/10 bg-transparent text-sm outline-none focus:border-black/30 focus:ring-1 focus:ring-black/30 placeholder:text-black/30 transition-all font-light"
                             />
                         </div>
@@ -115,6 +116,7 @@ export default function SignUp() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
+                                autoComplete="email"
                                 className="w-full px-5 py-3.5 rounded-2xl border border-black/10 bg-transparent text-sm outline-none focus:border-black/30 focus:ring-1 focus:ring-black/30 placeholder:text-black/30 transition-all font-light"
                             />
                         </div>
@@ -128,6 +130,7 @@ export default function SignUp() {
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                     required
+                                    autoComplete="new-password"
                                     className="w-full px-5 py-3.5 pr-12 rounded-2xl border border-black/10 bg-transparent text-sm outline-none focus:border-black/30 focus:ring-1 focus:ring-black/30 placeholder:text-black/30 transition-all font-light"
                                 />
                                 <button
