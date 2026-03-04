@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Camera, Lock, Bell, User, Heart, DownloadCloud } from "lucide-react";
 import { useAppStore } from "@/store/useAppStore";
 import { useRouter } from "next/navigation";
-import { supabase } from "../../../lib/supabase";
+import { supabase } from "@/lib/supabase";
 import axios from "axios";
 
 export default function Settings() {

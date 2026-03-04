@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { supabase } from '../../../lib/supabase';
+import { supabase } from '@/lib/supabase';
 
 export async function GET(request: Request) {
     try {
@@ -11,7 +11,7 @@ export async function GET(request: Request) {
             return NextResponse.json({ error: 'User ID is required' }, { status: 400 });
         }
 
-        // Try fetching user profile details from a "users" table if it exists
+         
         const { data: profile, error } = await supabase
             .from('users')
             .select('*')
